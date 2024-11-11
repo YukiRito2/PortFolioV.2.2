@@ -6,39 +6,55 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
-    title: "Quiz App",
-    cardImage: "assets/images/project-page/quiz.jpg",
+    title: "Memorando",
+    cardImage: "assets/images/project-page/Memorando.png",
     description: "A quiz app built using basic react.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://yukirito2.github.io/Memorando/",
+    Githublink: "https://github.com/YukiRito2/Memorando",
   },
   {
-    title: "Chess Engine",
-    cardImage: "assets/images/project-page/chess.jpg",
+    title: "FloresAmarillas",
+    cardImage: "assets/images/project-page/FloresAmarillas.jpg",
     description: "A chess engine for a popular game dev engine.",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://yukirito2.github.io/FloresAmarilla/",
+    Githublink: "https://github.com/YukiRito2/FloresAmarilla",
   },
   {
-    title: "Flappy Bird",
-    cardImage: "assets/images/project-page/flappybird.png",
+    title: "Mi primer portafolio",
+    cardImage: "assets/images/project-page/Portfolio.jpg",
     description: "Flappy bird game built using React.js",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://yukirito2.github.io/",
+    Githublink: "https://github.com/YukiRito2/YukiRito2.github.io",
   },
   {
-    title: "Exercise Tracker",
-    cardImage: "assets/images/project-page/exercise.jpg",
+    title: "Figma Web Design",
+    cardImage: "assets/images/project-page/Figma_01.jpg",
     description: "Exercise tracker built using basic redux.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://www.figma.com/design/XtJTuCGN1JOr0qevYx3KNZ/Dise%C3%B1o-Web?m=auto&t=QH16zpZ4i9LDf6NE-1",
+    Githublink: "https://www.figma.com/design/XtJTuCGN1JOr0qevYx3KNZ/Dise%C3%B1o-Web?m=auto&t=QH16zpZ4i9LDf6NE-1",
   },
   {
-    title: "Recipe Ingredient Parser",
+    title: "Figma E-commerce",
+    cardImage: "assets/images/project-page/Figma_02.jpg",
+    description: "Exercise tracker built using basic redux.",
+    tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
+    Previewlink: "https://www.figma.com/design/bEFTlDJhOnPjjOnBKKSG7R/E-commerce?m=auto&t=mFrc1u7UMggw3sBI-1",
+    Githublink: "https://www.figma.com/design/bEFTlDJhOnPjjOnBKKSG7R/E-commerce?m=auto&t=mFrc1u7UMggw3sBI-1",
+  },
+  {
+    title: "Figma Web Design",
+    cardImage: "assets/images/project-page/Figma_03.jpg",
+    description: "Exercise tracker built using basic redux.",
+    tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
+    Previewlink: "https://www.figma.com/design/4vXJ4rhdgOyfwyLDfMDNKm/Plasticos-M%26A?m=auto&t=q9GU6sXwTNkVjNif-1",
+    Githublink: "https://www.figma.com/design/4vXJ4rhdgOyfwyLDfMDNKm/Plasticos-M%26A?m=auto&t=q9GU6sXwTNkVjNif-1",
+  },
+  {
+    title: "Sistema de Ventas",
     cardImage: "assets/images/project-page/recipe.jpg",
     description: "Recipe Ingredient Parser built using JavaScript.",
     tagimg:
@@ -47,7 +63,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Poker Game",
+    title: "Listar rutas de archivos",
     cardImage: "assets/images/project-page/poker.jpg",
     description: "Poker game built using typescript.",
     tagimg: "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
@@ -55,7 +71,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Tic Tac Toe Game",
+    title: "GreenCommerce",
     cardImage: "assets/images/project-page/tic-tac-toe.png",
     description:
       "Tested a React Tic Tac Toe Game using Jest and React Testing Library.",
@@ -64,7 +80,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Personal Book Library",
+    title: "WhatsAppMonitor",
     cardImage: "assets/images/project-page/book.png",
     description: "Personal book library app built using JavaScript.",
     tagimg:
@@ -73,7 +89,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Minesweeper Game",
+    title: "Keylogger",
     cardImage: "assets/images/project-page/minesweeper.jpg",
     description:
       "Minesweeper Game built using python Object Oriented Programming.",
@@ -92,7 +108,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Movie Recommendation System",
+    title: "Facturas",
     cardImage: "assets/images/project-page/movie-recommendation.jpeg",
     description: "Built using Tensorflow.",
     tagimg:
@@ -123,7 +139,7 @@ const showCards = () => {
             <div class="data">
               <div class="content">
               <div class="title-div">
-                <h1 class="title"><a href="#">${title}</a></h1>
+                <h1 class="title">${title}</a></h1>
                 </div>
             <ul class="menu-content"><br>
                   <li><a href="${Previewlink}" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 28" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></a></li>
